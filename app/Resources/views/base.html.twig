@@ -2,11 +2,52 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Survival ISland{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/stylesheet.css') }}">
+        <script type="text/javascript" src="{{ asset('js/jquery.js') }}" ></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}" ></script> 
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     </head>
     <body>
+
+    <div class="col-md-12">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 row-title">
+            <h1 class="main-title"> Survival Island </h1>
+        </div>
+        <div class="col-md-1"></div>
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        <div class="col-md-2"></div>
+        <div class="col-md-8 navbar">
+            <div class="col-md-2">
+                <a class="nav-link" href="">Acceuil</a>
+            </div>
+            <div class="col-md-2">
+                <a class="nav-link" href="">Inventaire</a>
+            </div>
+            <div class="col-md-2">
+                <a class="nav-link" href="">Campement</a>
+            </div>
+            <div class="col-md-2">
+                <a class="nav-link" href="">Craft</a>
+            </div>
+            <div class="col-md-2">
+                <a class="nav-link" href="">Compétence</a>
+            </div>
+            <div class="col-md-2">
+                <a class="nav-link" href="{{ path('fos_user_security_logout') }}">Deconnexion</a>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        {% else %}
+
+        {% endif %}
+    </div>
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

@@ -1,0 +1,101 @@
+body {
+	background-color: #E0CDA9;
+}
+.main-title {
+	text-align:center;
+}
+.row-title {
+	border: solid #8D4024 1px;
+	border-radius: 5px;
+	background:url('../img/island.jpeg');
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-bottom:230px;
+	font-family: 'Lobster', sans-serif;
+	color: #8D4024;
+}
+.log-col {
+	border: solid #8D4024 1px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.3);
+	color: #8D4024;
+	margin-top: 20px;
+	height: 280px;
+}
+.pres-col {
+	border: solid #8D4024 1px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.3);
+	color: #8D4024;
+	margin-top: 20px;
+	height: 280px;
+	margin-left: 10px;
+	background:url('../img/first.png');
+	background-repeat: no-repeat;
+	background-size: 30% 90%;
+}
+.log-input {
+	width:100%;
+	background-color: rgba(46,204,113,0.6);
+	border: solid #8D4024 3px;
+	border-radius: 1px;
+}
+.log-title {
+	text-align: center;
+}
+.btn {
+	background-color: rgba(255,255,255,0);
+	margin: 5px;
+	color: #8D4024;
+}
+.btn:hover {
+	background-color: #E0CDA9;
+	color: #8D4024;
+}
+.btn:focus {
+	background-color: rgba(255,255,255,0.3);
+	color: #8D4024;
+}
+.btnlogin {
+	width: 100%;
+	background-color: rgba(255,255,255,0.3);
+}
+.navbar {
+	height: 25px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 2px;
+	padding: -15px;
+	min-height: 5px !important;
+	border: solid #8D4024 3px;
+	border-top: none;
+	text-align: center;
+}
+.nav-link {
+	font-family: 'Montserrat', sans-serif;
+	color: #8D4024;
+}
+.nav-link:hover {
+	color: green;
+}
+input {
+	width:100%;
+	background-color: rgba(46,204,113,0.6);
+	border: solid #8D4024 3px;
+	border-radius: 1px;
+}
+.register-title {
+	text-align: center;
+	color: #8D4024;
+}
+.reg-col {
+	border: solid #8D4024 1px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.3);
+	color: #8D4024;
+	margin-top: 20px;
+	height: 260px;
+}
+.regbtn {
+	margin-top: 15px;
+}
